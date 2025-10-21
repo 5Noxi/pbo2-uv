@@ -25,7 +25,7 @@ Example Scenarios:
 
 # Premodifications
 
-Download [Prime95](https://www.mersenne.org/download/), [HWiNFO](https://www.hwinfo.com/download/) & [Corecycler](https://github.com/sp00n/corecycler/releases).
+Download [Prime95](https://www.mersenne.org/download/), [HWiNFO](https://www.hwinfo.com/download/) & [Corecycler](https://github.com/sp00n/corecycler/releases). Optionally, download [PBO2 Tuner](https://drive.google.com/file/d/1OswZcZ72jhm_Neek9c7PV-aRhM1EuOrX/view) ([thread](https://www.overclock.net/threads/corecycler-tool-for-testing-single-core-stability-e-g-curve-optimizer-settings.1777398/page-45#post-28999750)), which allows you to view the current values/limits and edit the curve via a trigger during boot, but you will set them permanently via the UEFI anyway.
 
 - Enter your BIOS and search for the `Precision Boost Overdrive` tab
   - You may have multiple ones. Find out which one overwrites the others by changing a limit and testing it e.g. with small P95 FFTs
