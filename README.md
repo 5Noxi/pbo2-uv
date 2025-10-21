@@ -13,8 +13,8 @@ Dynamically adjusts CPU voltage and frequency, modifying power limits based on c
 | **EDC** (Electrical Design Current) | Maximum peak current the VRM allows for short bursts. | Limited by VRM specs. |
 | **TDC** (Thermal Design Current) | Maximum sustained current the VRM can deliver over time. | Limited by VRM cooling. |
 | **Platform Thermal Throttle** | Sets the maximum CPU temperature before throttling occurs. | Lowering it too much reduces performance. |
-| **Scalar** | Increases the FIT limit (1x–10x), enabling higher voltages. | May shorten CPU lifespan. |
-| **Boost Clock Override** (Fmax Override) | Raises the maximum boost frequency (-1000 to +200 MHz, 25 MHz steps). | Some motherboards allow higher values, but they have no effect. |
+| **Scalar** | Increases the FIT limit (`1x–10x`), enabling higher voltages. | May shorten CPU lifespan. |
+| **Boost Clock Override** (Fmax Override) | Raises the maximum boost frequency (`-1000` to `+200 MHz`, `25 MHz` steps). | Some motherboards allow higher values, but they have no effect. |
 | **Curve Optimizer** | Adjusts per-core voltage by modifying the VFT table. | Fine-tunes efficiency and boost behavior. |
 
 ![](https://github.com/5Noxi/pbo2-uv/blob/main/images/pbotechow.png)
