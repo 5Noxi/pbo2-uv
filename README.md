@@ -2,6 +2,9 @@
 
 Dynamically adjusts CPU voltage and frequency, modifying power limits based on cooling, workload, and VRM capability. Curve Optimizer in PBO enables per core undervolting that adapts to both light and heavy workloads. Each processor has different undervolting potential, with more headroom at low loads and less at high loads. It applies undervolting using counts instead of raw millivolts, with `1 count ≈ 3mV–5mV`. Users can adjust up to `+/- 30` counts (`90–150mV` total) on all cores or individual cores.
 
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/pbointro1.png)
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/pbointro2.png)
+
 # PBO Settings Overview
 
 | Setting | Description | Limitation / Effect |
@@ -14,11 +17,11 @@ Dynamically adjusts CPU voltage and frequency, modifying power limits based on c
 | **Boost Clock Override** (Fmax Override) | Raises the maximum boost frequency (-1000 to +200 MHz, 25 MHz steps). | Some motherboards allow higher values, but they have no effect. |
 | **Curve Optimizer** | Adjusts per-core voltage by modifying the VFT table. | Fine-tunes efficiency and boost behavior. |
 
-![]()
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/pbotechow.png)
 
 Example Scenarios:
 
-![]()
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/scenarios.png)
 
 # Premodifications
 
@@ -29,7 +32,7 @@ Download [Prime95](https://www.mersenne.org/download/), [HWiNFO](https://www.hwi
   - Some duplications may include single PBO settings, ignore them
 - Disable `PBO Fmax Enhancer`
 
-![]()
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/fmaxenh.png)
 
 - Setting limits (will be edited at the end)
   - Look up the PPT, EDC, and TDC limits used on your CPU.
@@ -38,11 +41,11 @@ Download [Prime95](https://www.mersenne.org/download/), [HWiNFO](https://www.hwi
 - Boost Clock Override (`Fmax Override`), as written above "Raises frequency ceiling (`-1000` to `+200 MHz`) - `25 MHz` steps"
   - Increase it to the desired value - you can start with `+100MHz`/`+200MHz`. Make sure that your temperatures are fine, so you don't throttle
 
-![]()
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/fmaxov.png)
 
-6. Set Curve Optimizer to `All Cores` & use `-30`
+- Set Curve Optimizer to `All Cores` & use `-30`
 
-![]()
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/magnitude.png)
 
 # Stress Testing
 
@@ -68,7 +71,7 @@ You can either set `PPT Limit`, `TDC Limit` & `EDC Limit` to manual and their de
 - Let [Prime95](https://www.mersenne.org/download/) (small FFTs) run for `5-10 min`
   - Open [HWiNFO](https://www.hwinfo.com/download/) during the test, as you should note the following values (under the `Enhanced CPU` section):
 
-![]()
+![](https://github.com/5Noxi/pbo2-uv/blob/main/images/limits.png)
 
 - Go back into the BIOS, set the limits to manual & type in the maximum values
 - Now you'll have to test each step with [PresentMon](https://github.com/GameTechDev/PresentMon) & any CPU heavy game
