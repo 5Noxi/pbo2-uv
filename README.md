@@ -19,7 +19,7 @@ Dynamically adjusts CPU voltage and frequency, modifying power limits based on c
 
 ![](https://github.com/5Noxi/pbo2-uv/blob/main/images/pbotechow.png)
 
-Example scenarios ([*](https://skatterbencher.com/amd-precision-boost-overdrive-2/):
+Example scenarios ([*](https://skatterbencher.com/amd-precision-boost-overdrive-2/)):
 
 ![](https://github.com/5Noxi/pbo2-uv/blob/main/images/scenarios.png)
 
