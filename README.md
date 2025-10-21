@@ -51,7 +51,7 @@ Download [Prime95](https://www.mersenne.org/download/), [HWiNFO](https://www.hwi
 
 Since you currently have all cores set to `-30`, many may be unstable/crash. Therefore, filter them with [Corecycler]((https://github.com/sp00n/corecycler/releases)).
 
-- Open `Run CoreCycler.bat` ([download](https://github.com/sp00n/corecycler/releases))
+- Open `Run CoreCycler.bat`
 - Let it pass one iteration
   - You'll probably see errors on specific cores now
 - Reboot into UEFI, set the curve optimizer to `Per Core`
